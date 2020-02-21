@@ -4,6 +4,7 @@
 
 int main(){
     int op,m,n,p,q,i,j,k,sum;
+    Top:
     printf("Enter First matrix row and column: ");
     scanf("%d%d",&m,&n);
     printf("Enter Secound matrix row and column: ");
@@ -29,7 +30,7 @@ int main(){
     }
     
     Start:
-    printf("1. Multiply\n2.Addition\n3.Substraction\n4.Tranjaction\n5.Exit\nEnter your desire: ");
+    printf("1. Multiply\n2.Addition\n3.Substraction\n4.Tranjaction\n5.Change Array\n6.Exit\nEnter your desire: ");
     scanf("%d",&op);
     switch (op)
     {
@@ -50,6 +51,10 @@ int main(){
         break;
     
     case 5:
+        goto Top;
+        break;
+    
+    case 6:
         goto Exit;
         break;
     
